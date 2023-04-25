@@ -33,3 +33,15 @@ function sum(a, b) {
 //Calling the function with a return statement by assigning the function a variable
 const add = sum(19, 5);
 console.log(add);
+
+// 5. Total calculator on food using a function with a return statement
+function calculateFoodTotal(food, tip) {
+  tipPercentage = tip / 100;
+  tipAmount = food * tipPercentage;
+
+  TotalBill = food + tipAmount;
+  return TotalBill;
+}
+
+const calculate = calculateFoodTotal(100, 20);
+console.log(calculate);
