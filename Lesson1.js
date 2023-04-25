@@ -1,3 +1,5 @@
+//Introduction file to js
+
 console.log("Hello World");
 
 //Variables
@@ -9,9 +11,10 @@ console.log(name);
 // console.log(fruit);
 
 food = Number(prompt("Enter food quantity"));
-tipPercentage = Number(prompt("Enter Tip percentage") / 100);
+tipPercentage = Number(prompt("Enter Tip percentage")) / 100;
 tipAmount = food * tipPercentage;
 
+console.log("Tip Amount", tipAmount);
 TotalBill = food + tipAmount;
-console.log("total", TotalBill);
+console.log("Total Bill", TotalBill);
 // alert(tipAmount);x
