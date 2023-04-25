@@ -34,14 +34,16 @@ function sum(a, b) {
 const add = sum(19, 5);
 console.log(add);
 
-// 5. Total calculator on food using a function with a return statement
+// 5. Another example of a function with a return statement i.e Total calculator on food  
 function calculateFoodTotal(food, tip) {
-  tipPercentage = tip / 100;
-  tipAmount = food * tipPercentage;
+ const tipPercentage = tip / 100;
+  const tipAmount = food * tipPercentage;
 
-  TotalBill = food + tipAmount;
+ const TotalBill = food + tipAmount;
   return TotalBill;
 }
 
-const calculate = calculateFoodTotal(100, 20);
-console.log(calculate);
+const total = calculateFoodTotal(500, 10);
+console.log(total);
+
+
