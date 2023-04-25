@@ -30,5 +30,6 @@ function sum(a, b) {
   return a + b;
 }
 
-//Calling the function using 2 arguments
-sum(3, 5);
+//Calling the function with a return statement by assigning the function a variable
+const add = sum(19, 5);
+console.log(add);
