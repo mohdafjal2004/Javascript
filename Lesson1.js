@@ -17,4 +17,4 @@ tipAmount = food * tipPercentage;
 console.log("Tip Amount", tipAmount);
 TotalBill = food + tipAmount;
 console.log("Total Bill", TotalBill);
-// alert(tipAmount);x
+// alert(tipAmount);

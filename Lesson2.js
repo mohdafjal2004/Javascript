@@ -1,3 +1,5 @@
+//This file is demonstration of conditional statements and conditional operators
+
 // Baby weather app (conditionals)
 //if rains 👉 "Grab your umbrell☂️"
 //else 👉 "Wear you sunglasse😎"
