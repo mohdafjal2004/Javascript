@@ -25,7 +25,7 @@ function sayMyName(name) {
 
 sayMyName("Afjal Bro");
 
-//4. function for addition of two numbers with  a return statement
+//4. function for addition of two parameters with  a return statement
 function sum(a, b) {
   return a + b;
 }
@@ -34,16 +34,29 @@ function sum(a, b) {
 const add = sum(19, 5);
 console.log(add);
 
-// 5. Another example of a function with a return statement i.e Total calculator on food  
+// 5. Another example of a function with a return statement i.e Total calculator on food
 function calculateFoodTotal(food, tip) {
- const tipPercentage = tip / 100;
+  const tipPercentage = tip / 100;
   const tipAmount = food * tipPercentage;
 
- const TotalBill = food + tipAmount;
+  const TotalBill = food + tipAmount;
   return TotalBill;
 }
 
 const total = calculateFoodTotal(500, 10);
 console.log(total);
 
+// 6. Arrow function with explicit return
+const sumArrow = (a, b) => {
+  return a + b;
+};
+const sum1 = sumArrow(1,2)
+console.log(sum1)
+
+
+//Another way of writing the above arrow function with implicit return
+//Arrow function with implicit return
+const sumArrow2 = (a, b) => a + b;
+const sum2 = sumArrow2(2,3);
+console.log(sum2)
 
