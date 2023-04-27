@@ -1,3 +1,6 @@
+//This file is for demonstration of Basic DOM Manipulation
+//that is grabbing the element  then  getting and changing its value
+
 console.log("Hello console");
 
 //Grabbing the HTML element from index.html
@@ -13,5 +16,5 @@ const hello = "Hello Javascript innerHTML";
 Gettitle.innerText = hello;
 console.log(Gettitle.innerText);
 
-//innerHTML example 
+//innerHTML example
 Gettitle.innerHTML = `<h1>${hello}</h1>`;
