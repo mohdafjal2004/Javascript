@@ -5,7 +5,6 @@ const billTotalInput = document.getElementById("billTotalInput");
 const TipInput = document.getElementById("tipInput");
 let numberOfPeopleDiv = document.getElementById("numberOfPeople");
 let perPersonTotal = document.getElementById("perPersonTotal");
-console.log(Number(TipInput.value));
 
 // Get number of people from number of people div
 let numberOfPeople = Number(numberOfPeopleDiv.innerText);
@@ -27,7 +26,7 @@ const calculateBill = () => {
   const perHead = total / numberOfPeople;
 
   // update the perPersonTotal on DOM & show it to user
-  perPersonTotal.innerText = perHead;
+  perPersonTotal.innerText = `$${perHead.toFixed(2)}`;
 
 };
 
