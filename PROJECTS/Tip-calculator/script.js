@@ -32,7 +32,7 @@ const calculateBill = () => {
 };
 
 const increasePeople = () => {
-  // increment the amount
+  // increment the number of people
   numberOfPeople += 1;
 
   // update the DOM with the new number of people
@@ -44,7 +44,7 @@ const increasePeople = () => {
 
 const decreasePeople = () => {
   if (numberOfPeople > 1) {
-    // increment the amount
+    // increment the number of people
     numberOfPeople -= 1;
 
     // update the DOM with the new number of people
