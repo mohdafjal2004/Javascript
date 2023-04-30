@@ -35,7 +35,7 @@ const userPlay = () => {
       })
   );
 };
-let user = userPlay();
+userPlay();
 
 //"let" Variables declared above will now be used for comparing and outputing the result
 const getResult = () => {
