@@ -1,4 +1,5 @@
 //Class with no constructor but with  properties
+
 //All values the class are default (whether inside the constructor or outside the constructor)
 //So when creating the object we can use our own value of the property defined in the class
 class Car {
