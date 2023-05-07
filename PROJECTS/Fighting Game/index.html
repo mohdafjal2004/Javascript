@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Fighter 1 -->
+      <div class="fighterbox">
+        <h1 id="p1">Fighter 1</h1>
+        <img src="Player1.gif" alt="" height="150px" width="150px" />
+
+        <!-- Fighter1 Attack -->
+        <div class="attack">
+          <span>Q: </span>
+          <span class="attackBtn">Attack </span>
+          <div id="attack1"></div>
+        </div>
+
+        <!-- Heal fighter 1 -->
+        <div class="heal">
+          <span>A:</span>
+          <span class="HealBtn">Heal </span>
+          <h4 id="Heal1"></h4>
+        </div>
+
+        <!-- Health of fighter 1 -->
+        <div class="health">
+          <h3>Health:</h3>
+          <div id="Health1" class="HealthCount"></div>
+        </div>
+      </div>
+
+      <!-- Fighter 2 -->
+      <div class="fighterbox">
+        <h1 id="p2">Fighter 2</h1>
+        <!-- Fighter 1 image -->
+        <img src="Player2.gif" alt="" height="150px" width="150px" />
+
+        <!-- Fighter 2 Attack -->
+        <div class="attack">
+          <span>P: </span>
+          <span class="attackBtn">Attack </span>
+          <div id="attack2"></div>
+        </div>
+
+        <!-- Heal Fighter 2-->
+        <div class="heal">
+          <span>L: </span>
+          <span class="HealBtn">Heal</span>
+          <h4 id="Heal2"></h4>
+        </div>
+
+        <!-- Health of Fighter 2 -->
+        <div class="health">
+          <h3>Health:</h3>
+          <div id="Health2" class="HealthCount"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="resultBox">
+      <h1 style="text-align: center">
+        Result
+        <h1 id="result"></h1>
+      </h1>
+    </div>
+
+    <!-- sound -->
+    <div>
+      <audio
+        src="quickhit.mp3 "
+        type="audio/mpeg"
+        style="display: none"
+        id="punch"
+      ></audio>
+      <audio
+        src="quickheal.mp3"
+        type="audio/mpeg"
+        style="display: none"
+        id="healSound"
+      ></audio>
+      <audio
+        src="victory.mp3"
+        type="audio/mpeg"
+        style="display: none"
+        id="victory"
+      ></audio>
+    </div>
+    <div id="resetDesign">
+      <!-- For  script.js-->
+      <!-- <button id="reset">RESET</button> -->
+
+       <!-- For  scriptGame.js-->
+      <button id="reset" onclick="game.reset(p1,p2)">RESET</button>
+    </div>
+  </body>
+  <!-- <script src="script.js"></script> -->
+  <script src="scriptGame.js"></script>
+</html>
